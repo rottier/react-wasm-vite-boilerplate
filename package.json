@@ -1,6 +1,6 @@
 {
   "name": "@rottier/react-wasm-vite-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "author": "rottier <marino@rottier.nl>",
   "license": "Apache-2.0",
