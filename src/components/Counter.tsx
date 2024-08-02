@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { set_count_update_callback, count } from '../../pkg';
+import { setCountUpdateCallback, increment } from '../../pkg';
 
 const Counter = () => {
     const [countValue, setCountValue] = useState(0);
 
-    useEffect(() =>  set_count_update_callback((newCount: number) => setCountValue(newCount)), []);
+    useEffect(() =>  setCountUpdateCallback((newCount: number) => setCountValue(newCount)), []);
 
-    const handleIncrement = () => count(1);
+    const handleIncrement = () => increment(1);
 
     return (
         <div>

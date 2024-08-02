@@ -8,7 +8,7 @@ thread_local! {
     static COUNT: Cell<i32> = Cell::new(0);
 }
 
-#[wasm_bindgen]
+#[wasm_bindgen(js_name = setCountUpdateCallback)]
 pub fn set_count_update_callback(callback: &Function) {
     CALLBACK.with(|cb| {
         *cb.borrow_mut() = Some(callback.clone().into());
@@ -16,7 +16,7 @@ pub fn set_count_update_callback(callback: &Function) {
 }
 
 #[wasm_bindgen]
-pub fn count(increment: i32) -> i32 {
+pub fn increment(increment: i32) -> i32 {
     // Access and modify the count
     let new_count = COUNT.with(|count| {
         let current = count.get();
