@@ -1,10 +1,11 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + WASM + Rust
 
 This template provides a minimal setup to get React working in Vite with HMR, WASM and some ESLint rules.
 
 ## Prerequisites
 - Rust
 - Node.js
+- Yarn (or another package manager)
 
 ## Getting Started
 
