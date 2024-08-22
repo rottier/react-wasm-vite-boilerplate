@@ -8,6 +8,7 @@ export default defineConfig({
   build:{
     target: "esnext",
   },
+  base: "./",
   plugins: [react(), wasm()],
   resolve: {
     alias: {
