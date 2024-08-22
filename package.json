@@ -4,7 +4,6 @@
   "type": "module",
   "author": "rottier <marino@rottier.nl>",
   "license": "Apache-2.0",
-  "homepage": "https://rottier.github.io/react-wasm-vite-boilerplate",
   "scripts": {
     "dev": "vite",
     "build": "rimraf ./dist && wasm-pack build --out-dir dist/wasm && tsc -b && vite build --emptyOutDir=false",
